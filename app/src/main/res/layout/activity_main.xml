@@ -5,69 +5,163 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="css.cis3334.intentsperformances.MainActivity"
-    android:orientation="vertical">
+    tools:context="css.cis3334.intentsperformances.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Upcoming Events"
-        android:textSize="18sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/spotlight1"
-            android:id="@+id/imageButton"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/spotlight1" />
 
         <TextView
-            android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
-            android:text="Web Info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/button1WebInfo"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="Add to Calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Web Info" />
+
+        <Button
             android:id="@+id/button1Calendar"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="Map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add to Calendar" />
+
+        <Button
             android:id="@+id/button1map"
-            android:layout_weight="1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/spotlight2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="254dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:text="Celebrate Spring Thursday, 3/8/18, 7:30 – 9:30 p.m. Mitchell Auditorium 218-723-7000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2WebInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Web Info" />
+
+        <Button
+            android:id="@+id/button2Calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add to Calendar" />
+
+        <Button
+            android:id="@+id/button2map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="75dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/spotlight3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="252dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cinema in the Trenches: World War I Friday, 4/6/18, 6:30 – 8:15 p.m. Burns Wellness Center Room:249 218-723-6144" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3WebInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Web Info" />
+
+        <Button
+            android:id="@+id/button3Calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_to_calendar" />
+
+        <Button
+            android:id="@+id/button3map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Map" />
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textViewStatus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewStatus" />
+        android:layout_height="wrap_content" />
 </LinearLayout>
